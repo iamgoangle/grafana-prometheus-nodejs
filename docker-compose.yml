@@ -17,12 +17,12 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=golf
     depends_on:
       - prometheus    
-  node-app:
-    build: .
-    container_name: "golf-node"
-    depends_on:
-      - prometheus
-      - grafana
-    command: ["npm", "start"]
-    ports:
-      - "8080:8080"
+  # node-app:
+  #   build: .
+  #   container_name: "golf-node"
+  #   depends_on:
+  #     - prometheus
+  #     - grafana
+  #   command: ["npm", "start"]
+  #   ports:
+  #     - "8080:8080"
